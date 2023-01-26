@@ -1,0 +1,42 @@
+/** {
+    box-sizing:border-box;
+  }
+  
+  body {
+    background: #333;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .game-container {
+    position: relative; 
+    width: 352px;
+    height: 198px;
+    margin: 0 auto;
+    outline: 1px solid #fff;
+  
+    transform: scale(3) translateY(42.25%);
+  }
+  
+  .game-container canvas {
+    image-rendering: pixelated;
+  }
+  #base{
+    position: absolute;
+    top: 0px; left: 0px;
+  }
+  
+.tail{
+    float: left;
+  width: 33.33%;
+  padding: 5px;
+  width: 100px;
+}
+
+.donkey{
+    content: "";
+  clear: both;
+  display: table;
+  width: 100px;
+}
