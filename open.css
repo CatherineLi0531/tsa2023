@@ -1,0 +1,26 @@
+body{
+    height: 300px;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    margin-top: 200px;
+    /*padding-left: 650px;
+    padding-top: 250px;*/
+    background-color: black;
+    color: white;
+    border-style: solid;
+}
+#text{
+    margin: auto;
+    padding-top: 50px;
+}
+button{
+    width: 90px;
+    height: 40px;
+}
+#box{
+    padding-top: 10px;
+}
+.answer{
+   visibility: hidden;
+}
