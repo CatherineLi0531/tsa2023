@@ -5,9 +5,9 @@
         <link rel="stylesheet" href="open.css">
     </head>
     <body>
-        <img id="box" src="images/box.png"width="250" height="150"/>
+        <img id="box" src="images/cups.png"width="200" height="190"/>
         <br>
-        <h2>What is the value of "?"</h2>
+        <h2>Which cup will fill first</h2>
         <input type="text" id="inputBox" value=""/>
         <button onclick = "checkValue()" type="button">Enter</button>
         <br><br>
@@ -18,7 +18,7 @@
             var c = document.getElementById("correct");
             function checkValue(){
                 var input = document.getElementById("inputBox").value;
-                if (input == 9){
+                if (input == 4){
                     w.style.visibility='hidden';
                     c.style.visibility='visible';
                     window.open("home.html", "_self");
