@@ -1,0 +1,16 @@
+body{
+    height: 600px;
+    width: 600px;
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    /*padding-left: 650px;
+    padding-top: 250px;*/
+    background-color: black;
+    color: white;
+    border-style: solid;
+}
+#text{
+    margin: auto;
+    padding-top: 50px;
+}

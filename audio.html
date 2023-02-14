@@ -2,26 +2,25 @@
     <head>
         <title>Life of the party</title>
         <link rel="stylesheet" href="open.css">
+        <script>window.open("open.html");</script>
     </head>
     <body>
-        <script>window.open("open.html", '_blank');</script>
         <audio controls autoplay playsinline>
             <source src="background.mp3" type="audio/mpeg" autoplay playsinlin></source>
             <source src="background.mp3" type="audio/ogg" autoplay playsinlin></source>
         </audio>
-        <div id="test"></div>
+        <div id="secs">10</div>
     <script>
-    intervalID = setInterval(function () {
-        var d = new Date(); //get current time
-        var seconds = d.getMinutes() * 60 + d.getSeconds(); //convet current mm:ss to seconds for easier caculation, we don't care hours.
-        var fiveMin = 60 * 1; //five minutes is 300 seconds!
-        var timeleft = fiveMin - seconds % fiveMin; // let's say now is 01:30, then current seconds is 60+30 = 90. And 90%300 = 90, finally 300-90 = 210. That's the time left!
-        var result = parseInt(timeleft / 60) + ':' + timeleft % 60; //formart seconds back into mm:ss 
-        document.getElementById('test').innerHTML = result;
-        if (timeleft<= 1){
-            clearInterval(intervalID);
+    var IntervalId = window.setInterval(function(){
+        var time = document.getElementById("secs").innerHTML;
+        if (time > 0) {
+            time -= 1;
+        } else {
+            window.open("endings/death.html", "_blank");
+            window.clearInterval(IntervalId);
         }
-    }, 500) //calling it every 0.5 second to do a count down\
+        document.getElementById("secs").innerHTML = time;
+    }, 1000);
     </script>
     </body>
 </html>
