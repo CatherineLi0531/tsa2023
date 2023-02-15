@@ -1,27 +1,30 @@
-<body>
-    <div>If the Sun were to exploade, approximetly how many minutes would it take to see the explosion on Earth?</div>
-    <input type="text" id="inputBox" value=""/>
-    <button onclick = "checkValue()" type="button">Enter</button>
-    <br><br>
-    <div id ="incorrect" class="answer">Wrong Answer</div>
-    <div id ="correct" class="answer">Correct answer</div>
-    <script>
-        var w = document.getElementById("incorrect");
-        var c = document.getElementById("correct");
-        function checkValue(){
-            var input = document.getElementById("inputBox").value;
-            if (input == 8){
-                w.style.visibility='hidden';
-                c.style.visibility='visible';
-                window.open("home.html", "_self");
+<html>
+    <head>
+        <title>Life of the Party</title>
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="open.css">
+    </head>
+    <body>
+        <div>If the Sun were to exploade, approximetly how many minutes would it take to see the explosion on Earth?</div>
+        <input type="text" id="inputBox" value=""/>
+        <button onclick = "checkValue()" type="button">Enter</button>
+        <br><br>
+        <div id ="incorrect" class="answer">Wrong Answer</div>
+        <div id ="correct" class="answer">Correct answer</div>
+        <script>
+            var w = document.getElementById("incorrect");
+            var c = document.getElementById("correct");
+            function checkValue(){
+                var input = document.getElementById("inputBox").value;
+                if (input == 8){
+                    w.style.visibility='hidden';
+                    c.style.visibility='visible';
+                    window.open("home.html", "_self");
+                }
+                else{
+                    w.style.visibility='visible';
+                }
             }
-            else{
-                w.style.visibility='visible';
-            }
-        }
-        function yolo(){
-            window.open("home.html", "_self");
-        }
-    </script>
-</body>
+        </script>
+    </body>
 </html>
