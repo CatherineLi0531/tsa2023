@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Life of the party</title>
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="open.css">
+    </head>
+    <body>
+        <div>Which fictional character is beleived to be real by over a quarter of Americans?</div>
+        <br>
+        <input type="text" id="inputBox" value=""/>
+        <button onclick = "checkValue()" type="button">Enter</button>
+        <br><br>
+        <div id ="incorrect" class="answer">Wrong Answer</div>
+        <div id ="correct" class="answer">Correct answer</div>
+        <script>
+            var w = document.getElementById("incorrect");
+            var c = document.getElementById("correct");
+            function checkValue(){
+                var input = document.getElementById("inputBox").value;
+                if (input == "Sherlock Holmes" || inputer == "sherlock holmes"){
+                    w.style.visibility='hidden';
+                    c.style.visibility='visible';
+                    window.open("home.html", "_self");
+                }
+                else{
+                    w.style.visibility='visible';
+                }
+            }
+            function yolo(){
+                window.open("home.html", "_self");
+            }
+        </script>
+    </body>
+</html>
