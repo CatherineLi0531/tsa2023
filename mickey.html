@@ -6,6 +6,8 @@
     </head>
     <body>
         <div>Computer mouse speed in measured in?</div>
+        <br> 
+        Enter full name in lowercase
         <br>
         <input type="text" id="inputBox" value=""/>
         <button onclick = "checkValue()" type="button">Enter</button>
@@ -17,7 +19,7 @@
             var c = document.getElementById("correct");
             function checkValue(){
                 var input = document.getElementById("inputBox").value;
-                if (input == "mickeys" || inputer == "Mickeys"){
+                if (input == "mickeys"){
                     w.style.visibility='hidden';
                     c.style.visibility='visible';
                     window.open("home.html", "_self");

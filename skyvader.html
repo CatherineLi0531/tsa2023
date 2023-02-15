@@ -5,7 +5,9 @@
         <link rel="stylesheet" href="open.css">
     </head>
     <body>
-        <div>What color is the "black box" on an airplane?</div>
+        <div>In Swedish fiction, a "skvader" is a hare with what unusual part?</div>
+        <br> 
+        Enter answer in lowercase
         <br>
         <input type="text" id="inputBox" value=""/>
         <button onclick = "checkValue()" type="button">Enter</button>
@@ -17,7 +19,7 @@
             var c = document.getElementById("correct");
             function checkValue(){
                 var input = document.getElementById("inputBox").value;
-                if (input == "orange"){
+                if (input == "wings"){
                     w.style.visibility='hidden';
                     c.style.visibility='visible';
                     window.open("home.html", "_self");
@@ -25,9 +27,6 @@
                 else{
                     w.style.visibility='visible';
                 }
-            }
-            function yolo(){
-                window.open("home.html", "_self");
             }
         </script>
     </body>

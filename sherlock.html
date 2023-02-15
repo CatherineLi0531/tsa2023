@@ -6,6 +6,8 @@
     </head>
     <body>
         <div>Which fictional character is beleived to be real by over a quarter of Americans?</div>
+        <br> 
+        Enter answer in lowercase
         <br>
         <input type="text" id="inputBox" value=""/>
         <button onclick = "checkValue()" type="button">Enter</button>
@@ -17,7 +19,7 @@
             var c = document.getElementById("correct");
             function checkValue(){
                 var input = document.getElementById("inputBox").value;
-                if (input == "Sherlock Holmes" || inputer == "sherlock holmes"){
+                if (input == "sherlock holmes"){
                     w.style.visibility='hidden';
                     c.style.visibility='visible';
                     window.open("home.html", "_self");
@@ -25,9 +27,6 @@
                 else{
                     w.style.visibility='visible';
                 }
-            }
-            function yolo(){
-                window.open("home.html", "_self");
             }
         </script>
     </body>
